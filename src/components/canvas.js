@@ -3,6 +3,8 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 var c = canvas.getContext('2d');
+c.font = '48px serif';
+    c.fillText('Hello world', 10, 50);
 
 // for (var i = 0; i < 5; i++) {
 //   var x = Math.random() * window.innerWidth;
@@ -63,7 +65,7 @@ function Circle(x, y, dx, dy, radius) {
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
     c.fillStyle = this.color;
     c.fill();
-    c.lineWidth = 4;
+    c.lineWidth = 3;
     c.strokeStyle = this.stroke;
     c.stroke();
   }
@@ -128,6 +130,15 @@ function animate() {
   for (var i = 0; i < circleArray.length; i++) {
     circleArray[i].update();
   }
+  c.textAlign = 'center';
+  c.font = 'small-caps 800 120px serif';
+  c.shadowColor = '#1C1D8C';
+  c.shadowBlur = 5;
+  c.lineWidth = 45;
+  c.strokeText('Adam Sinning', (innerWidth / 2), (innerHeight / 2));
+  c.shadowBlur = 0;
+  c.fillStyle = 'whitesmoke';
+  c.fillText('Adam Sinning', (innerWidth / 2), (innerHeight / 2));
 }
 
 
