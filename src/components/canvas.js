@@ -95,23 +95,23 @@ function Circle(x, y, dx, dy, radius) {
   }
 }
 
-var circleArray = [];
+// var circleArray = [];
 
-for (var i = 0; i < 650; i++) {
-  var x = Math.random() * (innerWidth - radius * 2) + radius;
-  var y = Math.random() * (innerHeight - radius * 2) + radius;
-  var dx = (Math.random() - 0.5) * 7;
-  var dy = (Math.random() - 0.5) * 7;
-  var radius = Math.random() * 3 + 10;
-  circleArray.push(new Circle(x, y, dx, dy, radius));
-}
+// for (var i = 0; i < 650; i++) {
+//   var x = Math.random() * (innerWidth - radius * 2) + radius;
+//   var y = Math.random() * (innerHeight - radius * 2) + radius;
+//   var dx = (Math.random() - 0.5) * 7;
+//   var dy = (Math.random() - 0.5) * 7;
+//   var radius = Math.random() * 3 + 10;
+//   circleArray.push(new Circle(x, y, dx, dy, radius));
+// }
 
 var circleArray = [];
 
 function init() {
 
   circleArray = [];
-  for (var i = 0; i < 400; i++) {
+  for (var i = 0; i < 300; i++) {
   var x = Math.random() * (innerWidth - radius * 2) + radius;
   var y = Math.random() * (innerHeight - radius * 2) + radius;
   var dx = (Math.random() - 0.5) * 7;

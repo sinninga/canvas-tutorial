@@ -1,5 +1,6 @@
 body {
   font-family: Helvetica;
+  width: 100vh;
 }
 
 #root {
@@ -11,4 +12,26 @@ body {
 
 canvas {
   background-color: whitesmoke;
+  width: 100vw;
+  height: 85vh;
+}
+
+nav {
+  height: 7vh;
+  width: 100vw;
+  color: whitesmoke;
+  background-color: #1C1D8C;
+}
+
+.paragraph {
+  height: 6vh;
+  width: 100vw;
+  color: whitesmoke;
+  background-color: #1C1D8C;
+}
+
+.text {
+  height: 6vh;
+  width: 100vw;
+  background-color: #1C1D8C;
 }
