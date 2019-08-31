@@ -40,7 +40,6 @@ var strokeArray = [
 window.addEventListener('mousemove', function(event) {
   mouse.x = event.x;
   mouse.y = event.y;
-  console.log(mouse);
 })
 
 window.addEventListener('resize', function() {
@@ -112,7 +111,7 @@ var circleArray = [];
 function init() {
 
   circleArray = [];
-  for (var i = 0; i < 650; i++) {
+  for (var i = 0; i < 400; i++) {
   var x = Math.random() * (innerWidth - radius * 2) + radius;
   var y = Math.random() * (innerHeight - radius * 2) + radius;
   var dx = (Math.random() - 0.5) * 7;
@@ -132,13 +131,13 @@ function animate() {
   }
   c.textAlign = 'center';
   c.font = 'small-caps 800 120px serif';
-  c.shadowColor = '#1C1D8C';
-  c.shadowBlur = 5;
-  c.lineWidth = 45;
-  c.strokeText('Adam Sinning', (innerWidth / 2), (innerHeight / 2));
+  c.shadowColor = 'black';
+  c.shadowBlur = 2;
+  c.lineWidth = 40;
+  c.strokeText('Adam Sinning', (innerWidth / 2), (innerHeight / 2), 600);
   c.shadowBlur = 0;
   c.fillStyle = 'whitesmoke';
-  c.fillText('Adam Sinning', (innerWidth / 2), (innerHeight / 2));
+  c.fillText('Adam Sinning', (innerWidth / 2), (innerHeight / 2), 600);
 }
 
 
