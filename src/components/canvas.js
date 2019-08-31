@@ -24,7 +24,6 @@ var maxRadius = 55;
 var colorArray = [
   '#F4C2B7',
   '#B2C8EA',
-  '#1C1D8C',
   '#FF5335',
   '#06D6A0'
 ];
