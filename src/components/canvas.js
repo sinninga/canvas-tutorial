@@ -122,7 +122,7 @@ function animate() {
     circleArray[i].update();
   }
   c.textAlign = 'center';
-  c.font = 'small-caps 900 140px serif';
+  c.font = 'small-caps 900 140px Chilanka';
   c.shadowColor = 'black';
   c.shadowBlur = 2;
   c.lineWidth = 53;
