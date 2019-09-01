@@ -13,22 +13,41 @@ body {
 
 canvas {
   background-color: whitesmoke;
-  width: 100vw;
-  height: 62vh;
+  width: 99vw;
+  height: 52vh;
+  border: 1vh solid #1C1D8C;
+  padding: 0;
+  border-radius: 550px;
+  margin-top: -5vh;
 }
 
 nav {
-  height: 18vh;
+  font-family: Chilanka;
+  font-size: 3vh;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
   width: 100vw;
   color: whitesmoke;
   background-color: #1C1D8C;
 }
 
 .paragraph {
-  height: 18vh;
+  height: 50vh;
   width: 100vw;
   color: whitesmoke;
   background-color: #1C1D8C;
+  border: 10px solid #1C1D8C;
+  margin-top: -5vh;
 }
 
+.contain {
+  background-color: #B2C8EA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
 

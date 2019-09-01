@@ -13,8 +13,7 @@ var maxRadius = 60;
 // var minRadius = 20;
 
 var colorArray = [
-  'whitesmoke',
-  '#1C1D8C'
+  '#B2C8EA', '#FF5335', '#06D6A0', '#F4C2B7'
 ];
 
 var strokeArray = [
@@ -27,15 +26,15 @@ var strokeArray = [
 
 window.addEventListener('mousemove', function(event) {
   mouse.x = event.x;
-  mouse.y = event.y;
+  mouse.y = event.y + 200;
 })
 
-window.addEventListener('click', function() {
-  colorArray.push('#F4C2B7', '#B2C8EA', '#FF5335', '#06D6A0', '#F4C2B7', '#B2C8EA', '#FF5335', '#06D6A0', '#F4C2B7', '#B2C8EA', '#FF5335', '#06D6A0');
-  console.log(colorArray);
+// window.addEventListener('click', function() {
+//   colorArray.push('#F4C2B7', '#B2C8EA', '#FF5335', '#06D6A0', '#F4C2B7', '#B2C8EA', '#FF5335', '#06D6A0', '#F4C2B7', '#B2C8EA', '#FF5335', '#06D6A0');
+//   console.log(colorArray);
 
-  init()
-})
+//   init()
+// })
 window.addEventListener('resize', function() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
@@ -94,7 +93,7 @@ var circleArray = [];
 function init() {
 
   circleArray = [];
-  for (var i = 0; i < 300; i++) {
+  for (var i = 0; i < 350; i++) {
   var x = Math.random() * (innerWidth - radius * 2) + radius;
   var y = Math.random() * (innerHeight - radius * 2) + radius;
   var dx = (Math.random() - 0.5) * 7;
@@ -115,8 +114,8 @@ function animate() {
   c.textAlign = 'center';
   c.font = 'small-caps 900 140px Chilanka';
   c.shadowColor = 'black';
-  c.shadowBlur = 4;
-  c.lineWidth = 53;
+  c.shadowBlur = 2;
+  c.lineWidth = 20;
   c.strokeText('Adam Sinning', (innerWidth / 2), (innerHeight / 2), 600);
   c.shadowBlur = 0;
   c.fillStyle = 'whitesmoke';
