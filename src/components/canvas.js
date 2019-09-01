@@ -18,14 +18,12 @@ var mouse = {
   y: undefined
 }
 
-var maxRadius = 55;
+var maxRadius = 60;
 // var minRadius = 20;
 
 var colorArray = [
-  '#F4C2B7',
-  '#B2C8EA',
-  '#FF5335',
-  '#06D6A0'
+  'whitesmoke',
+  '#1C1D8C'
 ];
 
 var strokeArray = [
@@ -42,7 +40,7 @@ window.addEventListener('mousemove', function(event) {
 })
 
 window.addEventListener('click', function() {
-  colorArray.push('whitesmoke', 'whitesmoke', 'whitesmoke', '#1C1D8C', '#1C1D8C', '#1C1D8C');
+  colorArray.push('#F4C2B7', '#B2C8EA', '#FF5335', '#06D6A0', '#F4C2B7', '#B2C8EA', '#FF5335', '#06D6A0', '#F4C2B7', '#B2C8EA', '#FF5335', '#06D6A0');
   console.log(colorArray);
 
   init()
@@ -89,7 +87,7 @@ function Circle(x, y, dx, dy, radius) {
     //interactivity
     if (mouse.x - this.x < 150 && mouse.x - this.x > -150 && mouse.y - this.y < 150 && mouse.y - this.y > -150) {
       if (this.radius < maxRadius) {
-        this.radius += 2;
+        this.radius += 3;
       }
     } else if (this.radius > this.minRadius) {
       this.radius -= 10;
@@ -124,10 +122,10 @@ function animate() {
     circleArray[i].update();
   }
   c.textAlign = 'center';
-  c.font = 'small-caps 800 120px serif';
+  c.font = 'small-caps 900 140px serif';
   c.shadowColor = 'black';
   c.shadowBlur = 2;
-  c.lineWidth = 40;
+  c.lineWidth = 53;
   c.strokeText('Adam Sinning', (innerWidth / 2), (innerHeight / 2), 600);
   c.shadowBlur = 0;
   c.fillStyle = 'whitesmoke';
