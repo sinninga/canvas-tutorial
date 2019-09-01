@@ -34,20 +34,78 @@ nav {
   background-color: #1C1D8C;
 }
 
-.paragraph {
-  height: 50vh;
-  width: 100vw;
-  color: whitesmoke;
-  background-color: #1C1D8C;
-  border: 10px solid #1C1D8C;
-  margin-top: -5vh;
-}
 
 .contain {
-  background-color: #B2C8EA;
+  background-color: #1C1D8C;
   display: flex;
   align-items: center;
   justify-content: center;
   width: auto;
 }
 
+.content-contain {
+  height: 61vh;
+  width: 100vw;
+  color: whitesmoke;
+  background-color: #1C1D8C;
+  border: 20px solid #1C1D8C;
+  margin-top: -15vh;
+}
+
+.content {
+  height: auto;
+  min-height: 45vh;
+  background-color: #FF5335;
+  border-radius: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.card-contain {
+  height: 20vh;
+  width: 40vh;
+  margin-top: 8vh;
+  margin-right: 5vh;
+  background-color: whitesmoke;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  padding: 2vh;
+  box-shadow: 3px 3px 5px purple;
+}
+
+.card {
+  height: 15vh;
+  width: 30vh;
+  background-color: #1C1D8C;
+  box-shadow: 3px 3px 5px grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.card:hover {
+  background-color: #FF5335;
+  transition: all;
+  width: 25vh;
+  height: 12vh;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.button-link {
+  font-family: Chilanka;
+  font-size: 2em;
+  color: white;
+}
+
+// '#F4C2B7',
+//   '#B2C8EA',
+//   '#1C1D8C',
+//   '#FF5335',
+//   '#06D6A0'
