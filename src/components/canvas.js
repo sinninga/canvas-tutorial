@@ -3,16 +3,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 var c = canvas.getContext('2d');
-c.font = '48px serif';
-    c.fillText('Hello world', 10, 50);
 
-// for (var i = 0; i < 5; i++) {
-//   var x = Math.random() * window.innerWidth;
-//   var y = Math.random() * window.innerHeight;
-//   c.beginPath();
-//   c.arc(x, y, 30, 0, Math.PI * 2, false);
-//   c.stroke();
-// }
 var mouse = {
   x: undefined,
   y: undefined
@@ -75,7 +66,7 @@ function Circle(x, y, dx, dy, radius) {
   this.update = function() {
     if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
     this.dx = -this.dx;
-  }
+    }
 
     if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
     this.dy = -this.dy;
@@ -124,7 +115,7 @@ function animate() {
   c.textAlign = 'center';
   c.font = 'small-caps 900 140px Chilanka';
   c.shadowColor = 'black';
-  c.shadowBlur = 2;
+  c.shadowBlur = 4;
   c.lineWidth = 53;
   c.strokeText('Adam Sinning', (innerWidth / 2), (innerHeight / 2), 600);
   c.shadowBlur = 0;
