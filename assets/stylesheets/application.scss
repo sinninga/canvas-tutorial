@@ -28,7 +28,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 7vh;
+  height: 10vh;
   width: 100vw;
   color: whitesmoke;
   background-color: #1C1D8C;
@@ -44,7 +44,7 @@ nav {
 }
 
 .content-contain {
-  height: 61vh;
+  height: 58vh;
   width: 100vw;
   color: whitesmoke;
   background-color: #1C1D8C;
@@ -58,6 +58,9 @@ nav {
   background-color: #FF5335;
   border-radius: 550px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: auto;
   align-items: center;
   justify-content: center;
   z-index: 1;
@@ -68,9 +71,11 @@ nav {
   width: 40vh;
   margin-top: 8vh;
   margin-right: 5vh;
+  margin-left: 5vh;
   background-color: whitesmoke;
   z-index: 2;
   display: flex;
+  flex-basis: auto;
   align-items: center;
   justify-content: center;
   border-radius: 3px;
@@ -84,6 +89,7 @@ nav {
   background-color: #1C1D8C;
   box-shadow: 3px 3px 5px grey;
   display: flex;
+  flex: 1 1 auto;
   align-items: center;
   justify-content: center;
   border-radius: 2px;
