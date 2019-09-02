@@ -55,7 +55,7 @@ nav {
 .content {
   height: auto;
   min-height: 45vh;
-  background-color: #FF5335;
+  background-color: #afc2ea;
   border-radius: 550px;
   display: flex;
   flex-direction: row;
@@ -84,6 +84,8 @@ nav {
 }
 
 .card {
+  transition: all;
+  transition-duration: 0.3s;
   height: 15vh;
   width: 30vh;
   background-color: #1C1D8C;
@@ -104,12 +106,24 @@ nav {
   cursor: pointer;
 }
 
+.card:active {
+  background-color: #F4C2B7;
+  transition: all;
+  width: 25vh;
+  height: 12vh;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
 .button-link {
   font-family: Chilanka;
   font-size: 2em;
   color: white;
 }
 
+.button-link:visited {
+  color: whitesmoke;
+}
 // '#F4C2B7',
 //   '#B2C8EA',
 //   '#1C1D8C',
