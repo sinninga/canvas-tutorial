@@ -12,13 +12,13 @@ body {
 }
 
 canvas {
-  background-color: whitesmoke;
-  width: 99vw;
-  height: 52vh;
-  border: 1vh solid #1C1D8C;
+  background-color: #1C1D8C;
+  width: 100vw;
+  height: 55vh;
+  // border: 1vh solid #1C1D8C;
   padding: 0;
-  border-radius: 550px;
-  margin-top: -5vh;
+  margin-bottom: 4vh;
+
 }
 
 nav {
@@ -44,19 +44,18 @@ nav {
 }
 
 .content-contain {
-  height: 58vh;
+  height: 68vh;
   width: 100vw;
   color: whitesmoke;
   background-color: #1C1D8C;
-  border: 20px solid #1C1D8C;
   margin-top: -15vh;
 }
 
 .content {
-  height: auto;
   min-height: 45vh;
-  background-color: #afc2ea;
-  border-radius: 550px;
+  margin-top: -13vh;
+  padding: 5vh;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -72,7 +71,7 @@ nav {
   margin-top: 8vh;
   margin-right: 5vh;
   margin-left: 5vh;
-  background-color: whitesmoke;
+  background-color: #B2C8EA;
   z-index: 2;
   display: flex;
   flex-basis: auto;
@@ -80,7 +79,7 @@ nav {
   justify-content: center;
   border-radius: 3px;
   padding: 2vh;
-  box-shadow: 3px 3px 5px purple;
+  box-shadow: 3px 3px 5px grey;
 }
 
 .card {
@@ -118,11 +117,17 @@ nav {
 .button-link {
   font-family: Chilanka;
   font-size: 2em;
+  font-weight: 500;
   color: white;
 }
 
 .button-link:visited {
   color: whitesmoke;
+}
+
+footer {
+  height: 7vh;
+  background-color: #1C1D8C;
 }
 // '#F4C2B7',
 //   '#B2C8EA',

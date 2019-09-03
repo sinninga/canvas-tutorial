@@ -59,7 +59,7 @@ function Circle(x, y, dx, dy, radius) {
     c.fill();
     c.lineWidth = 3;
     c.strokeStyle = this.stroke;
-    c.stroke();
+    // c.stroke();
   }
 
   this.update = function() {
