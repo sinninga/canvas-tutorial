@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>React boilerplate</title>
   </head>
   <body>
     <canvas></canvas>
-      <div class="content">
+      <div id="content" class="content">
         <div class="card-contain">
-          <div class="card">
-            <a href="https://sinninga.github.io/first-portfolio/" class='button-link'>PR0JECTS</a>
+          <div class="card" onclick="showContent()">
+            <a href="#" class='button-link'>PR0JECTS</a>
           </div>
         </div>
         <div class="card-contain">
-          <div class="card">
+          <div class="card" onclick="showContact()">
             <a href="#" class='button-link'>C0NTACT</a>
           </div>
         </div>
@@ -25,8 +26,8 @@
           </div>
         </div>
       </div>
-      <div class="projects">
-        <div class="project-card">
+      <div class="projects" id="projects" style="display: none">
+        <div class="project-card" data-aos="fade-right">
           <img src="/assets/photos/react.png" alt="" class="proj-pic">
           <div>
             <h3>Project One</h3>
@@ -34,7 +35,7 @@
             <a href="#" class="btn">Check It Out</a>
           </div>
         </div>
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-left">
           <img src="/assets/photos/js.png" alt="" class="proj-pic">
           <div>
             <h3>Project Two</h3>
@@ -42,7 +43,7 @@
             <a href="#" class="btn">Check It Out</a>
           </div>
         </div>
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-right">
           <img src="/assets/photos/redux.png" alt="" class="proj-pic">
           <div>
             <h3>Project Three</h3>
@@ -50,7 +51,45 @@
             <a href="#" class="btn">Check It Out</a>
           </div>
         </div>
+        <div class="project-card" data-aos="fade-left">
+          <img src="/assets/photos/css.png" alt="" class="proj-pic">
+          <div>
+            <h3>Project Three</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quae deleniti eum nam rerum, odit eos labore unde, numquam eius repudiandae enim fuga voluptas aut, maiores omnis nulla harum adipisci.</p>
+            <a href="#" class="btn">Check It Out</a>
+          </div>
+        </div>
+        <div class="project-card" data-aos="fade-right">
+          <img src="/assets/photos/heroku.png" alt="" class="proj-pic">
+          <div>
+            <h3>Project Three</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quae deleniti eum nam rerum, odit eos labore unde, numquam eius repudiandae enim fuga voluptas aut, maiores omnis nulla harum adipisci.</p>
+            <a href="#" class="btn">Check It Out</a>
+          </div>
+        </div>
+        <div class="project-card" data-aos="fade-left">
+          <img src="/assets/photos/ruby.png" alt="" class="proj-pic">
+          <div>
+            <h3>Project Three</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quae deleniti eum nam rerum, odit eos labore unde, numquam eius repudiandae enim fuga voluptas aut, maiores omnis nulla harum adipisci.</p>
+            <a href="#" class="btn">Check It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact" id="contact" style="display: none">
+        <div class="contact-contain">
+          <h1 class="contact-title">Contact Info</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima necessitatibus dolore animi accusantium veritatis aperiam aliquid repellendus eius excepturi cupiditate suscipit nihil, assumenda fugit, esse minus, iusto, blanditiis mollitia eos.</p>
+        </div>
       </div>
       <footer></footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000
+      });
+    </script>
+    <script src="templates/show_content.js"></script>
   </body>
 </html>
