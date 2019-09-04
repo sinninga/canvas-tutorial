@@ -11,12 +11,12 @@
     <canvas></canvas>
       <div id="content" class="content">
         <div class="card-contain">
-          <div class="card" onclick="showContent()">
+          <div class="card">
             <a href="#" class='button-link'>PR0JECTS</a>
           </div>
         </div>
         <div class="card-contain">
-          <div class="card" onclick="showContact()">
+          <div class="card">
             <a href="#" class='button-link'>C0NTACT</a>
           </div>
         </div>
@@ -26,7 +26,8 @@
           </div>
         </div>
       </div>
-      <div class="projects" id="projects" style="display: none">
+      <div class="projects" id="projects">
+        <a name="project-link"/>
         <div class="project-card" data-aos="fade-right">
           <img src="/assets/photos/react.png" alt="" class="proj-pic">
           <div>
@@ -83,6 +84,7 @@
         </div>
       </div>
       <footer></footer>
+    <script src="templates/show_content.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -90,6 +92,5 @@
         duration: 1000
       });
     </script>
-    <script src="templates/show_content.js"></script>
   </body>
 </html>

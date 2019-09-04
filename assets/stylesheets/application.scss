@@ -59,7 +59,7 @@ nav {
 
 .content {
   width: 100vw;
-  min-height: 46vh;
+  min-height: 53vh;
   margin-top: -13vh;
   padding: 5vh;
   background-color: #B2C8EA;
@@ -90,6 +90,7 @@ nav {
 }
 
 .card {
+  text-decoration: none;
   transition: all;
   transition-duration: 0.3s;
   height: 15vh;
@@ -104,9 +105,9 @@ nav {
 }
 
 .card:hover {
+  text-decoration: none;
   background-color: #FF5335;
   transition: all;
-  width: 25vh;
   height: 12vh;
   transition-duration: 0.3s;
   cursor: pointer;
@@ -174,6 +175,10 @@ nav {
   .project-card {
     display: block;
   }
+}
+
+#project-link {
+  scroll-behavior: smooth;
 }
 
 .contact {
